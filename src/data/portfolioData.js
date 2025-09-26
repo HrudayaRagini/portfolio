@@ -2,19 +2,19 @@
 // This file contains all the data used across the portfolio components
 
 export const personalInfo = {
-  name: "MALIPIREDDY AVINASH",
+  name: "VENKATA DURGA PRASAD ILLA",
   title: "Software Developer",
   description: "Motivated Java developer with strong OOP and software development skills, eager to contribute in collaborative team environments.",
   contact: {
-    phone: "8978326207",
-    email: "avinashece.2025@gmail.com"
+    phone: "8897319730 ",
+    email: "durga9730cse@gmail.com"
   },
   socialLinks: {
-    linkedin: "https://www.linkedin.com/in/veera-venkata-avinash-malipireddy-0aa34026b",
-    github: "https://github.com/Avinash-M2003/Avinash-M2003",
-    portfolio: "https://portfolio-git-main-avinash-m2003s-projects.vercel.app/"
+    linkedin: "https://www.linkedin.com/in/venkata-durga-prasad-illa-55502225a",
+    github: "https://github.com/Durga-Prasad88",
+    portfolio: "#"
   },
-  profileImage: "/profile-photo.jpeg"
+  profileImage: "/profile-photo.jpg"
 };
 
 export const education = {
@@ -22,11 +22,11 @@ export const education = {
   icon: '🎓',
   items: [
     {
-      degree: "Bachelor of Electronics and Communication Engineering",
+      degree: "Bachelor of Computer Science and Engineering",
       institution: "Krishna University College of Engineering and Technology",
       location: "Machilipatnam",
       date: "04/2024",
-      description: "Specialized in electronics and communication systems with focus on software development and programming"
+      description: "Specialized in computer science and engineering with focus on software development and programming"
     }
   ]
 };
