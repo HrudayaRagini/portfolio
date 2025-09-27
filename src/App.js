@@ -21,7 +21,7 @@ function App() {
       <StarryBackground />
       
       {/* Main Content - All components layered on top with proper masking */}
-      <div style={{ position: 'relative', zIndex: 2 }}>
+      <div className="relative z-10">
         <HeroBanner />
         <Sections />
         <ProjectsSection />

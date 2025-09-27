@@ -554,3 +554,63 @@ html {
 .animate-text-glow {
   animation: text-glow 2s ease-in-out infinite;
 }
+
+/* Mobile Responsive Improvements */
+@media (max-width: 768px) {
+  /* Reduce animation intensity on mobile */
+  .animate-float {
+    animation: card-float 8s ease-in-out infinite;
+  }
+  
+  .animate-glow {
+    animation: glow-pulse 4s ease-in-out infinite;
+  }
+  
+  /* Improve touch targets */
+  button, a, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better text readability on mobile */
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  /* Prevent horizontal scroll on mobile */
+  .app-container {
+    overflow-x: hidden;
+  }
+  
+  /* Improve modal on mobile */
+  .modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  /* Better spacing for mobile */
+  .sections-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 475px) {
+  /* Further reduce font sizes for very small screens */
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Reduce padding on very small screens */
+  .section-card {
+    padding: 1rem !important;
+  }
+  
+  /* Make orbital elements smaller on very small screens */
+  .orbit-element {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+}

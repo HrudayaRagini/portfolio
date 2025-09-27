@@ -62,7 +62,7 @@ export default function VercelGlobe() {
   return (
     <div style={{
       width: '100%',
-      maxWidth: 800,
+      maxWidth: window.innerWidth < 768 ? 300 : window.innerWidth < 1024 ? 500 : 800,
       aspectRatio: 1,
       margin: 'auto',
       position: 'relative',
@@ -87,7 +87,7 @@ export default function VercelGlobe() {
             const delta = e.clientX - pointerInteracting.current;
             pointerInteractionMovement.current = delta;
             api.start({
-              r: delta / 200,
+              r: delta / (window.innerWidth < 768 ? 100 : 200),
             });
           }
         }}
@@ -96,7 +96,7 @@ export default function VercelGlobe() {
             const delta = e.touches[0].clientX - pointerInteracting.current;
             pointerInteractionMovement.current = delta;
             api.start({
-              r: delta / 100,
+              r: delta / (window.innerWidth < 768 ? 50 : 100),
             });
           }
         }}

@@ -128,7 +128,7 @@ const ProjectCylinderScroll = () => {
   // Calculate panel positions for cylinder (6 panels, 60 degrees apart)
   const getPanelTransform = (index) => {
     const angle = index * 60; // 0deg, 60deg, 120deg, 180deg, 240deg, 300deg
-    const radius = 450; // translateZ distance
+    const radius = window.innerWidth < 768 ? 200 : window.innerWidth < 1024 ? 300 : 450; // translateZ distance
     
     return {
       transform: `rotateY(${angle}deg) translateZ(${radius}px)`,
@@ -142,30 +142,30 @@ const ProjectCylinderScroll = () => {
           className="Project-Section"
           style={{
             width: '100%',
-            height: '80vh',
+            height: window.innerWidth < 768 ? '60vh' : '80vh',
             position: 'relative',
-            perspective: '2000px',
+            perspective: window.innerWidth < 768 ? '1000px' : '2000px',
             overflow: 'hidden',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            margin: '2rem 0 4rem 0',
-            padding: '1rem',
-            borderRadius: '20px'
+            margin: '1rem 0 2rem 0',
+            padding: '0.5rem',
+            borderRadius: '10px'
           }}
         >
       {/* Section Title */}
       <div 
         style={{
           position: 'absolute',
-          top: '2rem',
+          top: window.innerWidth < 768 ? '1rem' : '2rem',
           left: '50%',
           transform: 'translateX(-50%)',
           zIndex: 200,
           textAlign: 'center'
         }}
       >
-        <h2 className="relative z-10 text-4xl sm:text-5xl lg:text-6xl font-black bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent text-center drop-shadow-2xl tracking-wide hover:scale-105 transition-transform duration-300">
+        <h2 className="relative z-10 text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent text-center drop-shadow-2xl tracking-wide hover:scale-105 transition-transform duration-300">
           My <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">Projects</span>
         </h2>
       </div>
@@ -175,24 +175,25 @@ const ProjectCylinderScroll = () => {
         className="Center-Text"
         style={{
           position: 'absolute',
-          top: '35%',
+          top: window.innerWidth < 768 ? '30%' : '35%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
           zIndex: 100,
           textAlign: 'center',
-          maxWidth: '800px',
-          pointerEvents: 'none'
+          maxWidth: window.innerWidth < 768 ? '90%' : '800px',
+          pointerEvents: 'none',
+          padding: window.innerWidth < 768 ? '0 1rem' : '0'
         }}
       >
         <motion.h1 
           key={`title-${frontProjectIndex}`}
           className="Main-Title"
           style={{
-            fontSize: '2.5rem',
+            fontSize: window.innerWidth < 768 ? '1.5rem' : window.innerWidth < 1024 ? '2rem' : '2.5rem',
             fontWeight: '700',
             color: '#ffffff',
-            marginBottom: '1.5rem',
-            letterSpacing: '3px',
+            marginBottom: window.innerWidth < 768 ? '1rem' : '1.5rem',
+            letterSpacing: window.innerWidth < 768 ? '1px' : '3px',
             lineHeight: '1.2',
             fontFamily: 'cursive'
           }}
@@ -206,11 +207,11 @@ const ProjectCylinderScroll = () => {
           key={`desc-${frontProjectIndex}`}
           className="Main-Description"
           style={{
-            fontSize: '1.1rem',
+            fontSize: window.innerWidth < 768 ? '0.9rem' : '1.1rem',
             color: '#cccccc',
             lineHeight: '1.6',
             fontWeight: '300',
-            letterSpacing: '1px'
+            letterSpacing: window.innerWidth < 768 ? '0.5px' : '1px'
           }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -223,25 +224,25 @@ const ProjectCylinderScroll = () => {
         <motion.div 
           key={`tech-${frontProjectIndex}`}
           style={{
-            marginTop: '1.5rem',
+            marginTop: window.innerWidth < 768 ? '1rem' : '1.5rem',
             display: 'flex',
             justifyContent: 'center',
             flexWrap: 'wrap',
-            gap: '0.5rem'
+            gap: window.innerWidth < 768 ? '0.25rem' : '0.5rem'
           }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          {transformedProjects[frontProjectIndex]?.technologies?.slice(0, 4).map((tech, techIndex) => (
+          {transformedProjects[frontProjectIndex]?.technologies?.slice(0, window.innerWidth < 768 ? 3 : 4).map((tech, techIndex) => (
             <span 
               key={techIndex}
               style={{
                 background: 'rgba(96, 165, 250, 0.2)',
                 color: '#60a5fa',
-                padding: '0.25rem 0.75rem',
+                padding: window.innerWidth < 768 ? '0.2rem 0.5rem' : '0.25rem 0.75rem',
                 borderRadius: '20px',
-                fontSize: '0.9rem',
+                fontSize: window.innerWidth < 768 ? '0.7rem' : '0.9rem',
                 border: '1px solid rgba(96, 165, 250, 0.3)'
               }}
             >
@@ -268,8 +269,8 @@ const ProjectCylinderScroll = () => {
             className="Panel"
             style={{
               position: 'absolute',
-              width: '400px',
-              height: '600px',
+              width: window.innerWidth < 768 ? '250px' : window.innerWidth < 1024 ? '300px' : '400px',
+              height: window.innerWidth < 768 ? '350px' : window.innerWidth < 1024 ? '450px' : '600px',
               ...getPanelTransform(index)
             }}
             initial={{ opacity: 0 }}
@@ -282,7 +283,7 @@ const ProjectCylinderScroll = () => {
                 width: '100%',
                 height: '100%',
                 background: 'rgba(0, 0, 0, 0.8)',
-                borderRadius: '20px',
+                borderRadius: window.innerWidth < 768 ? '10px' : '20px',
                 boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)',
                 overflow: 'hidden',
                 display: 'flex',
@@ -375,30 +376,45 @@ const ProjectCylinderScroll = () => {
               <div 
                 className="Panel-Details"
                 style={{
-                  padding: '2rem',
+                  padding: window.innerWidth < 768 ? '1rem' : '2rem',
                   flex: 1,
                   display: 'flex',
                   flexDirection: 'column'
                 }}
               >
-                <h2 style={{ fontSize: '1.8rem', fontWeight: '600', color: '#ffffff', marginBottom: '1rem' }}>
+                <h2 style={{ 
+                  fontSize: window.innerWidth < 768 ? '1.2rem' : '1.8rem', 
+                  fontWeight: '600', 
+                  color: '#ffffff', 
+                  marginBottom: window.innerWidth < 768 ? '0.5rem' : '1rem' 
+                }}>
                   {project.title}
                 </h2>
-                <p style={{ color: '#cccccc', lineHeight: '1.6', marginBottom: '1.5rem' }}>
+                <p style={{ 
+                  color: '#cccccc', 
+                  lineHeight: '1.6', 
+                  marginBottom: window.innerWidth < 768 ? '1rem' : '1.5rem',
+                  fontSize: window.innerWidth < 768 ? '0.8rem' : '1rem'
+                }}>
                   {project.description}
                 </p>
                 
-                <div style={{ marginBottom: '1.5rem' }}>
-                  <h4 style={{ fontSize: '1.1rem', color: '#ffffff', marginBottom: '0.5rem' }}>Key Features:</h4>
+                <div style={{ marginBottom: window.innerWidth < 768 ? '1rem' : '1.5rem' }}>
+                  <h4 style={{ 
+                    fontSize: window.innerWidth < 768 ? '0.9rem' : '1.1rem', 
+                    color: '#ffffff', 
+                    marginBottom: '0.5rem' 
+                  }}>Key Features:</h4>
                   <ul style={{ listStyle: 'none', padding: 0 }}>
-                    {project.features.slice(0, 3).map((feature, featureIndex) => (
+                    {project.features.slice(0, window.innerWidth < 768 ? 2 : 3).map((feature, featureIndex) => (
                       <li 
                         key={featureIndex} 
                         style={{ 
                           color: '#cccccc', 
                           marginBottom: '0.25rem', 
                           position: 'relative', 
-                          paddingLeft: '1rem' 
+                          paddingLeft: '1rem',
+                          fontSize: window.innerWidth < 768 ? '0.7rem' : '0.9rem'
                         }}
                       >
                         <span style={{ color: '#007bff', position: 'absolute', left: 0 }}>•</span>
@@ -409,17 +425,21 @@ const ProjectCylinderScroll = () => {
                 </div>
 
                 <div>
-                  <h4 style={{ fontSize: '1.1rem', color: '#ffffff', marginBottom: '0.5rem' }}>Technologies:</h4>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                    {project.technologies.map((tech, techIndex) => (
+                  <h4 style={{ 
+                    fontSize: window.innerWidth < 768 ? '0.9rem' : '1.1rem', 
+                    color: '#ffffff', 
+                    marginBottom: '0.5rem' 
+                  }}>Technologies:</h4>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: window.innerWidth < 768 ? '0.25rem' : '0.5rem' }}>
+                    {project.technologies.slice(0, window.innerWidth < 768 ? 4 : project.technologies.length).map((tech, techIndex) => (
                       <span 
                         key={techIndex} 
                         style={{
                           background: 'rgba(255, 255, 255, 0.1)',
                           color: '#ffffff',
-                          padding: '0.25rem 0.5rem',
+                          padding: window.innerWidth < 768 ? '0.15rem 0.3rem' : '0.25rem 0.5rem',
                           borderRadius: '4px',
-                          fontSize: '0.8rem',
+                          fontSize: window.innerWidth < 768 ? '0.6rem' : '0.8rem',
                           border: '1px solid rgba(255, 255, 255, 0.2)'
                         }}
                       >
@@ -439,7 +459,7 @@ const ProjectCylinderScroll = () => {
         className="Scroll-Indicator"
         style={{
           position: 'absolute',
-          bottom: '2rem',
+          bottom: window.innerWidth < 768 ? '1rem' : '2rem',
           left: '50%',
           transform: 'translateX(-50%)',
           zIndex: 100,
@@ -451,12 +471,16 @@ const ProjectCylinderScroll = () => {
         animate={{ opacity: 0.7 }}
         transition={{ duration: 1, delay: 1 }}
       >
-        <div style={{ fontSize: '0.9rem', marginBottom: '0.5rem', letterSpacing: '1px' }}>
-          Horizontal scroll or arrow keys to rotate
+        <div style={{ 
+          fontSize: window.innerWidth < 768 ? '0.7rem' : '0.9rem', 
+          marginBottom: '0.5rem', 
+          letterSpacing: '1px' 
+        }}>
+          {window.innerWidth < 768 ? 'Swipe or arrow keys to rotate' : 'Horizontal scroll or arrow keys to rotate'}
         </div>
         <div 
           style={{ 
-            fontSize: '1.5rem',
+            fontSize: window.innerWidth < 768 ? '1.2rem' : '1.5rem',
             animation: 'bounce 2s infinite',
             display: 'flex',
             justifyContent: 'center',
