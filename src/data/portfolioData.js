@@ -12,7 +12,7 @@ export const personalInfo = {
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/veera-venkata-avinash-malipireddy-0aa34026b/",
     github: "https://github.com/Avinash-M2003",
-    portfolio: "https://portfolio-jior59mqq-avinash-m2003s-projects.vercel.app?_vercel_share=5ZHUOXIjMOD833pcNbCoWp0d6UPW2DPJ"
+    portfolio: "https://portfolio-two-blond-ziw6ajubod.vercel.app/"
   },
   profileImage: "/profile-photo.jpeg"
 };
