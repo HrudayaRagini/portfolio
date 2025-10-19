@@ -205,7 +205,7 @@ const HeroBanner = () => {
               ? 'animate__animated animate__fadeInLeft' 
               : 'opacity-0 translate-x-8'
           }`}>
-            <div className="profile-wrapper w-24 h-24 xs:w-28 xs:h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden border-2 sm:border-4 border-white/20 transition-all duration-300 hover:border-blue-500 hover:scale-105 shadow-2xl">
+            <div className="profile-wrapper w-32 h-32 xs:w-36 xs:h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 lg:w-48 lg:h-48 xl:w-52 xl:h-52 rounded-full overflow-hidden border-2 sm:border-4 border-white/20 transition-all duration-300 hover:border-blue-500 hover:scale-105 shadow-2xl">
               <img 
                 src={personalInfo.profileImage} 
                 alt={`${personalInfo.name} Profile`} 

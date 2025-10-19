@@ -2,16 +2,17 @@
 // This file contains all the data used across the portfolio components
 
 export const personalInfo = {
-  name: "Malipireddy Avinash",
+  name: "Hrudaya Ragini L",
   title: "Software Developer",
-  description: "Motivated Java developer with strong OOP and software development skills, eager to contribute in collaborative team environments.",
+  description: "Motivated Java developer with strong OOP and software development skills, eager to contribute in collaborative team environments",
   contact: {
-    phone: "8978326207 ",
-    email: "avinashece.2025@gmail.com"
+    phone: "+91-9381360833",
+    email: "hrudayaragini2000@gmail.com",
+    location: "Hyderabad"
   },
   socialLinks: {
-    linkedin: "https://www.linkedin.com/in/veera-venkata-avinash-malipireddy-0aa34026b/",
-    github: "https://github.com/Avinash-M2003",
+    linkedin: "https://www.linkedin.com/in/lam-hrudaya-ragini-8878a3251/",
+    github: "https://github.com/HrudayaRagini/",
     portfolio: "https://portfolio-two-blond-ziw6ajubod.vercel.app/"
   },
   profileImage: "/profile-photo.jpeg"
@@ -22,11 +23,18 @@ export const education = {
   icon: '🎓',
   items: [
     {
-      degree: "Bachelor of Electronics and Communication Engineering",
-      institution: "Krishna University College of Engineering and Technology",
-      location: "Machilipatnam",
-      date: "04/2024",
-      description: "Specialized in Electronics and Communication Engineering with focus on software development and programming"
+      degree: "Masters, MSc, Computer Science",
+      institution: "RBVRR WOMEN'S COLLEGE",
+      location: "Hyderabad",
+      date: "Jun 2021 — Jul 2023",
+      description: "GPA: 9.7 - Advanced studies in Computer Science with focus on machine learning and software development"
+    },
+    {
+      degree: "Bachelor's, Computer Science",
+      institution: "Avanthi degrees and PG college",
+      location: "Hyderabad",
+      date: "Jun 2018 — Apr 2021",
+      description: "GPA: 9.1 - Comprehensive foundation in computer science and programming"
     }
   ]
 };
@@ -36,34 +44,34 @@ export const skills = {
   icon: '💻',
   categories: [
     {
-      title: "Programming Languages",
+      title: "Web Development",
       color: "blue",
-      items: ["Java", "JavaScript", "TypeScript", "Python", "C"]
+      items: ["HTML", "CSS", "Node.js", "JavaScript", "React.js", "Website Builder", "RESTful APIs"]
     },
     {
-      title: "Web Technologies",
+      title: "Technical Skills",
       color: "cyan",
-      items: ["React JS", "Next JS", "Express.js", "HTML5/CSS3", "Bootstrap"]
+      items: ["MySQL", "Basics of DevOps", "Software Development", "SDLC Methodologies", "DBMS"]
     },
     {
-      title: "Technology Stacks",
+      title: "Office Productivity",
       color: "green",
-      items: ["T3 Stack", "MERN Stack", "PERN Stack", "Java Stack"]
+      items: ["Word", "PowerPoint", "Microsoft Excel", "Documentation", "Reporting Technologies"]
     },
     {
-      title: "Cloud & Databases",
+      title: "Project Support",
       color: "purple",
-      items: ["AWS", "Azure", "MongoDB", "PostgreSQL", "MySQL"]
+      items: ["Time Management", "Organizational Skills", "Multi-tasking", "Process Improvement"]
     },
     {
-      title: "Frameworks & Tools",
+      title: "Communication",
       color: "orange",
-      items: ["Spring Boot", "Hibernate", "Docker", "Kubernetes", "Git"]
+      items: ["Verbal & Written Communication", "Presentational Skills", "Soft Skills", "Team Collaboration"]
     },
     {
-      title: "Development Tools",
+      title: "Analytical & Interpersonal",
       color: "red",
-      items: ["VS Code", "IntelliJ", "Cursor", "Postman", "Maven"]
+      items: ["Research & Analytical Skills", "Problem Solving", "Collaboration", "Adaptability", "Decision Making", "Leadership Skills"]
     }
   ]
 };
@@ -73,15 +81,16 @@ export const experience = {
   icon: '💼',
   items: [
     {
-      position: "Entry-Level Developer",
-      company: "Software Development",
-      duration: "Recent",
-      description: "Collaborated with cross-functional teams during innovation, bootstrapping, pilot, and production phases",
+      position: "Executive - Data Researcher",
+      company: "International Educational Gateway Pvt Ltd",
+      location: "Hyderabad, India",
+      duration: "Apr 2024 — Mar 2025",
+      description: "As an Executive Frontend Developer at International Educational Gateway Private Limited, I played a key role in the research, development, and enhancement of the Alumni Management System.",
       responsibilities: [
-        "Collaborated with cross-functional teams during innovation, bootstrapping, pilot, and production phases",
-        "Worked with tools across the full software delivery lifecycle, including IDEs, source control, CI tools, defect management, and analytics",
-        "Contributed to microservices development and RESTful API creation with test-driven development",
-        "Developed scalable software designs with high-quality performance and accuracy"
+        "Conducted in-depth data research and implemented backend updates to optimize system performance and storage on AWS",
+        "Received comprehensive training as a Frontend Developer, further strengthening technical skill set",
+        "Played a key role in the research, development, and enhancement of the Alumni Management System",
+        "Applied both technical and soft skills to deliver effective, user-focused solutions"
       ]
     }
   ]
@@ -92,24 +101,16 @@ export const certifications = {
   icon: '🏆',
   items: [
     {
-      name: "Full Stack Java Developer",
+      name: "Java Full-Stack Developer",
       description: "Comprehensive training in Java development and full-stack technologies",
-      provider: "Excelr"
+      provider: "ExcelR",
+      date: "May 2024"
     },
     {
-      name: "Web Frontend Development",
-      description: "Advanced frontend development skills and modern web technologies",
-      provider: "Krify Software Technologies Private Limited"
-    },
-    {
-      name: "Python Programming",
-      description: "Python development and programming fundamentals",
-      provider: "Pantech E Learning"
-    },
-    {
-      name: "C Language Programming",
-      description: "C programming fundamentals and system programming",
-      provider: "99 Computers"
+      name: "Full Stack Developer",
+      description: "Advanced full-stack development skills and modern web technologies",
+      provider: "Ai Varient",
+      date: "Sep 2024"
     }
   ]
 };
@@ -119,96 +120,89 @@ export const projects = {
   icon: '🚀',
   items: [
     {
-      name: "Trunkie EduTech Platform",
-      description: "A comprehensive educational technology platform built with modern full-stack technologies",
-      technologies: ["TypeScript", "Next JS", "tRPC", "BetterAuth", "Drizzle ORM", "Bun"],
+      name: "Smart Farming CASE-STUDY",
+      description: "This project aims to enhance the agricultural sector by applying Machine Learning and Deep Learning techniques, providing farmers with data-driven insights to support better crop selection and improved yield.",
+      technologies: ["Machine Learning", "Deep Learning", "Python", "Data Analysis"],
       features: [
-        "Developed full-stack monorepo architecture using Turborepo",
-        "Implemented modular authentication flows with protected routes",
-        "Built reusable UI components and custom React hooks",
-        "Integrated Drizzle ORM for type-safe database interactions"
+        "Crop yield prediction using machine learning algorithms",
+        "Data-driven insights for better crop selection",
+        "Agricultural productivity forecasting",
+        "Farmer decision support system"
       ],
       links: {
         live: "#",
         github: "#"
       },
-      image: "/project1.jpg"
+      image: "/project1.jpg",
+      duration: "Mar 2023 — May 2023",
+      organization: "RBVRR (Major Project)"
     },
     {
-      name: "E-Commerce Platform",
-      description: "A comprehensive e-commerce solution with secure backend and responsive frontend",
-      technologies: ["Spring Boot", "React", "Tailwind CSS"],
+      name: "Online Hotel Management System & Insurance",
+      description: "Developed an online Hotel Management System using React.js, focused on creating a user-friendly interface for efficiently managing hotel details, bookings, and associated data.",
+      technologies: ["React.js", "JavaScript", "HTML", "CSS"],
       features: [
-        "Developed secure backend with Spring Boot for product browsing and order tracking",
-        "Implemented shopping cart and order processing with transaction management",
-        "Integrated RESTful services for seamless data exchange",
-        "Designed responsive UI with React Router for smooth navigation"
+        "User-friendly interface for hotel management",
+        "Efficient hotel details and booking management",
+        "Insurance integration features",
+        "Responsive design for multiple devices"
       ],
       links: {
         live: "#",
         github: "#"
       },
-      image: "/project2.jpg"
+      image: "/project2.jpg",
+      duration: "Apr 2024 — Jun 2024",
+      organization: "ExcelR"
     },
     {
-      name: "Hotel Management System",
-      description: "Java & Spring Boot application for hotel bookings, billing, and room management.",
-      technologies: ["Java", "Spring Boot", "MySQL", "Thymeleaf", "Bootstrap"],
+      name: "Todo List",
+      description: "The primary purpose of a to-do list is to help you remember tasks, manage time efficiently, and reduce stress by organizing and prioritizing responsibilities.",
+      technologies: ["React", "JavaScript", "HTML", "CSS"],
       features: [
-        "Room booking management",
-        "Customer billing",
-        "Admin dashboard"
+        "Task management and organization",
+        "Time management and efficiency tools",
+        "Priority-based task sorting",
+        "Stress reduction through organization"
       ],
       links: {
         live: "#",
         github: "#"
       },
-      image: "/project3.jpg"
+      image: "/project3.jpg",
+      duration: "Aug 2024 — Oct 2024",
+      organization: "Univariety"
     },
     {
-      name: "Task Management App",
-      description: "Modern task management application with real-time collaboration.",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
+      name: "Weather Forecast App",
+      description: "Our weather app, built with React and JavaScript, offers a dynamic and user-friendly platform for accessing real-time weather forecasts.",
+      technologies: ["React", "JavaScript", "Weather API", "HTML", "CSS"],
       features: [
-        "Real-time updates",
-        "Team collaboration",
-        "Advanced filtering"
+        "Real-time weather data",
+        "Dynamic and user-friendly interface",
+        "Location-based weather forecasts",
+        "Interactive weather display"
       ],
       links: {
         live: "#",
         github: "#"
       },
-      image: "/project4.jpg"
-    },
+      image: "/project4.jpg",
+      duration: "Nov 2024 — Nov 2024",
+      organization: "Ai Varient"
+    }
+  ]
+};
+
+export const awards = {
+  title: 'Awards',
+  icon: '🏅',
+  items: [
     {
-      name: "Weather Dashboard",
-      description: "Interactive weather dashboard with location-based forecasts.",
-      technologies: ["JavaScript", "Chart.js", "OpenWeather API"],
-      features: [
-        "Real-time data",
-        "Interactive charts",
-        "Location forecasts"
-      ],
-      links: {
-        live: "#",
-        github: "#"
-      },
-      image: "/project5.jpg"
-    },
-    {
-      name: "Social Media Analytics",
-      description: "Analytics platform for social media metrics tracking, engagement analysis, and content performance insights.",
-      technologies: ["Python", "Django", "PostgreSQL", "Chart.js", "Bootstrap"],
-      features: [
-        "Social media metrics tracking and analysis",
-        "Engagement rate calculations and insights",
-        "Content performance analytics dashboard"
-      ],
-      links: {
-        live: "#",
-        github: "#"
-      },
-      image: "/project6.avif"
+      name: "Best Presentation Award",
+      organization: "Mala Reddy Institute of Engineering and Technology",
+      date: "Jun 2023",
+      description: "Paper Presentation on Crop yield prediction using machine learning (ML) involves leveraging algorithms to forecast agricultural productivity, helping farmers and stakeholders make informed decisions."
     }
   ]
 };
