@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Portfolio Website
 
 A modern, interactive portfolio website built with React.js featuring stunning 3D animations, interactive project showcases, and a responsive design.
@@ -214,3 +215,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 ⭐ **Star this repository if you found it helpful!**
+=======
+# portfolio
+>>>>>>> 812227ccad071a54308e33b2398614359e9b2f03
