@@ -3,8 +3,8 @@
 
 export const personalInfo = {
   name: "Hrudaya Ragini L",
-  title: "Software Developer",
-  description: "Motivated Java developer with strong OOP and software development skills, eager to contribute in collaborative team environments",
+  title: "IT Executive",
+  description: "IT professional with nearly 2 years of Ed-Tech experience, with hands-on exposure to React.js, Next.js, JavaScript, Node.js, REST APIs, and MySQL. Experienced in web application development, data research, and system enhancement, seeking opportunities in **Software Engineering and Web Development.",
   contact: {
     phone: "+91-9381360833",
     email: "hrudayaragini2000@gmail.com",
@@ -15,7 +15,7 @@ export const personalInfo = {
     github: "https://github.com/HrudayaRagini/",
     portfolio: "https://portfolio-two-blond-ziw6ajubod.vercel.app/"
   },
-  profileImage: "/profile-photo.jpeg"
+  profileImage: "/ragini-profile-photo.jpeg"
 };
 
 export const education = {
@@ -51,7 +51,7 @@ export const skills = {
     {
       title: "Technical Skills",
       color: "cyan",
-      items: ["MySQL", "Basics of DevOps", "Software Development", "SDLC Methodologies", "DBMS"]
+      items: ["MySQL", "Basics of DevOps", "Software Development", "SDLC Methodologies", "Basics of Python"]
     },
     {
       title: "Office Productivity",
@@ -81,16 +81,19 @@ export const experience = {
   icon: '💼',
   items: [
     {
-      position: "Executive - Data Researcher",
+      position: "IT Executive - Data Researcher",
       company: "International Educational Gateway Pvt Ltd",
       location: "Hyderabad, India",
-      duration: "Apr 2024 — Mar 2025",
+      duration: "Apr 2024 — Present",
       description: "As an Executive Frontend Developer at International Educational Gateway Private Limited, I played a key role in the research, development, and enhancement of the Alumni Management System.",
       responsibilities: [
-        "Conducted in-depth data research and implemented backend updates to optimize system performance and storage on AWS",
-        "Received comprehensive training as a Frontend Developer, further strengthening technical skill set",
-        "Played a key role in the research, development, and enhancement of the Alumni Management System",
-        "Applied both technical and soft skills to deliver effective, user-focused solutions"
+        "Started with IT data research, validation and reporting responsibilities and progressively contributed to web application development initiatives.",
+        "Contributed to modernization of a web-based Alumni Management System using React.js and Next.js.",
+        "Developed and enhanced frontend UI components and user workflows.",
+        "Integrated REST APIs with frontend modules and supported API issue resolution.",
+        "Used SQL/MySQL for data validation, reporting and application-related data checks.",
+        "Improved signup and alumni onboarding workflows and contributed to AI-enabled alumni analytics dashboards.",
+        "Collaborated with cross-functional product and technology teams on application enhancements."
       ]
     }
   ]
@@ -190,6 +193,42 @@ export const projects = {
       image: "/project4.jpg",
       duration: "Nov 2024 — Nov 2024",
       organization: "Ai Varient"
+    },
+    {
+      name: "GCC || Alumni Engagement Platform",
+      description: "Contributed to modernization of the legacy platform, improved signup user experience and supported resolution of API-related issues.",
+      technologies: ["React.js", "Next.js", "Node.js", "REST APIs"],
+      features: [
+        "Legacy platform modernization using React.js and Next.js",
+        "Improved signup and user experience workflows",
+        "REST API integration and issue resolution",
+        "Alumni engagement, placements, and fundraising modules"
+      ],
+      links: {
+        live: "#",
+        github: "#"
+      },
+      image: "/gcc-alumni-platform.jpg",
+      duration: "Apr 2024 — Present",
+      organization: "International Educational Gateway"
+    },
+    {
+      name: "Alumni Onboarding Flow",
+      description: "Implemented social login and contributed to a dynamic onboarding workflow for alumni registration and profile setup.",
+      technologies: ["React.js", "Next.js", "OAuth"],
+      features: [
+        "Social login integration using OAuth",
+        "Dynamic multi-step onboarding workflow",
+        "Streamlined alumni registration experience",
+        "Profile setup and authentication flow enhancements"
+      ],
+      links: {
+        live: "#",
+        github: "#"
+      },
+      image: "/alumni-onboarding-flow.jpg",
+      duration: "Apr 2024 — Present",
+      organization: "International Educational Gateway"
     }
   ]
 };
